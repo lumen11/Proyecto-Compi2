@@ -1,0 +1,305 @@
+.area {
+    background-color: red;
+}
+
+#cuerpo {
+    background-color: #575555;
+}
+
+.column_layout {
+    float: left;
+    width: 1%;
+}
+
+.row_layout:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column_layout {
+        width: 100%;
+    }
+}
+
+.menu {
+    width: 100%;
+    position: absolute;
+}
+
+.pestañas {
+    border-style: solid;
+    border-radius: 5px;
+    height: 550px;
+    width: 930px;
+    position: relative;
+    top: 0px;
+}
+
+.PaquetesRecibidos {
+    overflow: auto;
+}
+
+.consola {
+    height: 100%;
+    width: 100%;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    resize: none;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tabsEditor {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 4px;
+    transition: 0.3s;
+}
+
+.tabsEditor button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 4px;
+    transition: 0.3s;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabsEditor button:hover {
+    background-color: #ddd;
+}
+
+
+/* Create an active/current tablink class */
+
+.tabsEditor button.active {
+    background-color: #ccc;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    height: 94%;
+    width: 100%;
+}
+
+.tabEditor {
+    height: 550px;
+    width: 50%;
+}
+
+#AreaTexto {
+    left: 2px;
+    height: 450px;
+    width: 430px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    resize: none;
+    position: relative;
+}
+
+#Salida {
+    left: 425px;
+    height: 450px;
+    width: 430px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    resize: none;
+    position: relative;
+}
+
+#Consola {
+    left: 850px;
+    height: 450px;
+    width: 430px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    resize: none;
+    position: relative;
+}
+
+#AreaBotones {
+    left: 460px;
+    height: 30px;
+    width: 430px;
+    resize: none;
+    position: relative;
+}
+
+#panelTraduccion {
+    left: 420px;
+    width: 930px;
+    height: 550px;
+    position: relative;
+    font-family: 'Slabo 27px', serif;
+}
+
+#panelDebugger {
+    left: 10px;
+    width: 400px;
+    height: 480px;
+    position: relative;
+    font-family: 'Slabo 27px', serif;
+    overflow: auto;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#panelErrores {
+    left: 2px;
+    width: 640px;
+    height: 500px;
+    position: relative;
+    font-family: 'Slabo 27px', serif;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#panelSimbolos {
+    left: 640px;
+    width: 640px;
+    height: 500px;
+    position: relative;
+    font-family: 'Slabo 27px', serif;
+    color: rgb(255, 255, 255);
+    overflow: auto;
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#panelAST {
+    left: 2px;
+    width: 1290px;
+    height: 800px;
+    position: relative;
+    font-family: 'Slabo 27px', serif;
+    overflow: auto;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#panelStack {
+    width: 200px;
+    left: 10px;
+    top: 20px;
+    position: relative;
+    overflow: auto;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#panelHeap {
+    width: 200px;
+    left: 20px;
+    top: 20px;
+    position: relative;
+    overflow: auto;
+    border: 1px solid rgb(252, 252, 252);
+}
+
+
+#img-button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.img-buttonTranslate {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+#buttonErrors {
+    left: 30px;
+    position: relative;
+}
+
+#buttonTsim {
+    left: 30px;
+    position: relative;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#cuadruplos {
+    height: 500px;
+}
+
+#titulo {
+    background-color: blue;
+}
+
+
+
+.clase4dcss {
+    background-color: blue;
+}
+
+.clase4dcss1 {
+    background-color: green;
+}
+
+#Simbolos {
+    overflow: auto;
+}
+
+#Errores {
+    overflow: auto;
+}
+
+#Optimizacion {
+    overflow: auto;
+}

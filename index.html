@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compi2 - Proyecto1</title>
+    <link rel="stylesheet" href="resources/css/codemirror.css">
+    <link rel="stylesheet" href="resources/css/isotope.css">
+    <link rel="stylesheet" href="resources/css/bootstrap.css">
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+</head>
+
+<body id="cuerpo" class="cuerpo">
+    <div id="titulo">
+        <center>
+            <label style="color: rgb(255, 255, 255); font-size: 24px;">MatrioshTS</label>
+        </center>
+    </div>
+    
+    <div class="row_layout" style="margin-top: 10px;">
+        <div class="column_layout" style="margin-top: 10px;">
+            <div style="width: 450px;">
+                <div id="AreaTexto">
+                    <h6>Entrada</h6>
+                    <textarea id="textarea4d" name="textarea4d"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="column_layout" style="margin-top: 10px;">
+            <div id="Salida">
+                <h6>Salida</h6>
+                <textarea id="consolaArea" name="consolaArea" class="consola"></textarea>
+            </div>
+        </div>
+        <div class="column_layout" style="margin-top: 10px;">
+            <div id="Consola">  
+                <h6>Consola</h6>
+                <textarea id="consolaArea" name="consolaArea" class="consola"></textarea>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row_layout" style="margin-top: 10px;">
+        <div class="column_layout" style="margin-top: 10px;">
+        <div id="AreaBotones">
+            <button onclick="" class="btn btn-primary">Traducir</button>
+            <button onclick="" class="btn btn-primary">Ejecutar</button>
+            <button onclick="" class="btn btn-primary">Errores</button>
+            <button onclick="" class="btn btn-primary">TS</button>
+            <button onclick="" class="btn btn-primary">AST</button>
+        </div>        
+        
+    </div>
+    </div>
+    <br>
+
+    <div class="row_layout" style="margin-top: 10px;">
+
+        <div class="column_layout" style="margin-top: 10px;">
+            <div id="panelErrores" class="row_layout" >
+                <center>
+                    <h4>Tabla de Errores</h4>
+                    <table id="tablaSimbolos" style="width:100%">
+                    <tr>
+                        <th>Error tipo</th>
+                        <th>Descripcion</th>
+                        <th>Linea</th>
+                        <th>Columna</th>
+                        <th>Ambito</th>
+                    </tr>
+                    </table>
+                </center>
+                
+            </div>
+        </div>
+
+        <div class="column_layout" style="margin-top: 10px;">
+            <div id="panelSimbolos" class="row_layout" >
+                <center>
+                    <h4>Tabla de Simbolos</h4>
+                    <table id="tablaSimbolos" style="width:100%">
+                    <tr>
+                        <th>Id</th>
+                        <th>Tipo</th>
+                        <th>Ambito</th>
+                    </tr>
+                    </table>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="row_layout" style="margin-top: 10px;">
+
+        <div class="column_layout" style="margin-top: 10px;">
+            <div id="panelAST" class="row_layout" >
+                <center>
+                    <h4>AST</h4>
+                    
+                </center>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="resources/js/codemirror.js"></script>
+    <script src="resources/js/Jquery.js"></script>
+    <script src="resources/js/bootstrap.js"></script>
+    <script src="resources/mode/javascript/javascript.js"></script>
+    <script src="resources/mode/pascal/pascal.js"></script>
+    
+    <script>
+        var editor4D = CodeMirror.fromTextArea(textarea4d, {
+            lineNumbers: true,
+            mode: "javascript",
+            theme: "isotope"
+        });
+        editor4D.setSize(null, 450);
+        editor4D.getDoc().setValue('hola');
+    </script>
+
+    <script src="resources/js/main.js"></script>
+    <script>
+        var exports = {};
+    </script>
+    
+</body>
+
+</html>
