@@ -1,0 +1,157 @@
+//DECLARACIONES
+
+let matrixA : number [][] = [];
+let matrixB : number [][] = [];
+let matrixR : number [][] = [];
+const min = 0;
+const max = 4;
+let first:number = 123; // number
+let employeeName:string = 'John Smith'; 
+let isPresent:boolean = true;
+let fruits: string[] = ['Apple', 'Orange', 'Banana'];
+
+//ASIGNACIONES
+
+matrix1[i] = [];
+matrix2[i] = [];
+matrix3[i] = [];
+
+matrix1[i][j] = j * 3 + i;
+matrix2[i][j] = i ** 3 - j ** 2;
+matrix3[i][j] = 0;
+
+contador = contador + matrix[i][j];
+let salida = '';
+salida = salida + "\t|\t" + matrix[i][j];
+
+matrixR[i][j] = matrix1[i][j] + matrix2[i][j];
+
+temp = matrix1[i][j];
+iAux = i;
+jAux = j;
+
+//TERNARIO
+access = firstCheck ? "Acceso Denegado" : secondCheck;
+s = "La Cuota es de:  " + (isMember ? "$2.00" : "$10.00");
+
+//IF
+if(matrix1[i][j] < temp){
+                temp = matrix1[i][j];
+                iAux = i;
+                jAux = j;
+}
+
+
+if (n == null) {
+        return 0;
+}
+
+//SWITCH
+let day : number = 4;
+
+switch (day) {
+    case 0:
+        console.log("It is a Sunday.");
+        break;
+    case 1:
+        console.log("It is a Monday.");
+        break;
+    case 2:
+        console.log("It is a Tuesday.");
+        break;
+    case 3:
+        console.log("It is a Wednesday.");
+        break;
+    case 4:
+        console.log("It is a Thursday.");
+        break;
+    case 5:
+        console.log("It is a Friday.");
+        break;
+    case 6:
+        console.log("It is a Saturday.");
+        break;
+    default:
+        console.log("No such day exists!");
+        break;
+}
+
+
+
+switch (expr) {
+  case 'Naranjas':
+    console.log('El kilogramo de naranjas cuesta $0.59.');
+    break;
+  case 'Manzanas':
+    console.log('El kilogramo de manzanas cuesta $0.32.');
+    break;
+  case 'Platanos':
+    console.log('El kilogramo de platanos cuesta $0.48.');
+    break;
+  case 'Cerezas':
+    console.log('El kilogramo de cerezas cuesta $3.00.');
+    break;
+  case 'Mangos':
+  case 'Papayas':
+    console.log('El kilogramo de mangos y papayas cuesta $2.79.');
+    break;
+  default:
+    console.log('Lo lamentamos, por el momento no disponemos de ' + expr + '.');
+}
+
+switch (foo) {
+  case -1:
+    console.log('1 negativo');
+    break;
+  case 0: // foo es 0, por lo tanto se cumple la condición y se ejecutara el siguiente bloque
+    console.log(0);
+    // NOTA: el "break" olvidado debería estar aquí
+  case 1: // No hay sentencia "break" en el 'case 0:', por lo tanto este caso también será ejecutado
+    console.log(1);
+    break; // Al encontrar un "break", no será ejecutado el 'case 2:'
+  case 2:
+    console.log(2);
+    break;
+  default:
+    console.log('default');
+}
+
+//WHILE
+
+let i: number = 2;
+
+while (i < 4) {
+    console.log( "Block statement execution no." + i );
+    i++;
+}
+
+
+//DOWHILE
+
+
+let i: number = 2;
+do {
+    console.log("Block statement execution no." + i );
+    i++;
+} while ( i < 4);
+
+
+//FOR
+
+for(let i = min; i < max; i++){
+        matrix1[i] = [];
+        matrix2[i] = [];
+        matrix3[i] = [];
+        for(let j = min; j < max; j++){
+            matrix1[i][j] = j * 3 + i;
+            matrix2[i][j] = i ** 3 - j ** 2;
+            matrix3[i][j] = 0;
+        }
+}
+
+
+//funciones
+
+function display() : void {
+    console.log("Hello TypeScript!");
+}
